@@ -3,6 +3,12 @@
 FROM resin/rpi-raspbian:wheezy
 MAINTAINER Markus Fix <lispmeister@gmail.com>
 
+# Install wget
+RUN apt-get update && apt-get install -y \
+    wget
+    --no-install-recommends && \
+    rm -rf /var/lib/apt/lists/*
+    
 # Prepare extra repositories
 RUN echo "deb http://packages.erlang-solutions.com/debian wheezy contrib" >> /etc/apt/sources.list.d/erlang-solutions.list
 RUN wget http://packages.erlang-solutions.com/debian/erlang_solutions.asc
