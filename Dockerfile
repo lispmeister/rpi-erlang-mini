@@ -3,8 +3,6 @@
 FROM resin/rpi-raspbian:wheezy
 MAINTAINER Markus Fix <lispmeister@gmail.com>
 
-RUN apt-get update
-
 # Install wget, extra repositories and erlang-mini
 ADD install.sh /
 RUN /install.sh
