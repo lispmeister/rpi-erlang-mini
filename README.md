@@ -1,4 +1,4 @@
-# rpi-python
+# rpi-erlang-mini
 
 Raspberry Pi compatible Docker base image with Erlang preinstalled.
 We are using the Erlang mini distribution as provided by Erlang
