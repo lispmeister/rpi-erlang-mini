@@ -21,18 +21,6 @@ Run all the commands from within the project root directory.
 
 
 #### Build the Docker Image
-Login to a Raspberry Pi as root and prepare the node by adding an
-additional apt repository:
-
-```bash
-echo "deb http://packages.erlang-solutions.com/debian wheezy contrib"\\
-   >> /etc/apt/sources.list
-wget http://packages.erlang-solutions.com/debian/erlang_solutions.asc
-apt-key add erlang_solutions.asc
-apt-get update
-```
-
-Then build the container:
 ```bash
 make build
 ```
