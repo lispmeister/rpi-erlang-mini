@@ -6,7 +6,8 @@ MAINTAINER Markus Fix <lispmeister@gmail.com>
 RUN apt-get update
 
 # Install wget, extra repositories and erlang-mini
-RUN install.sh
+ADD install.sh /
+RUN /install.sh
 
 # Define working directory
 WORKDIR /data
