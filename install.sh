@@ -14,5 +14,7 @@ rm erlang_solutions.asc
 # install erlang-mini
 apt-get update && apt-get install -y \
     erlang-mini \
-    --no-install-recommends && \
-    rm -rf /var/lib/apt/lists/*
+    --no-install-recommends
+
+# cleanup
+apt-get clean && rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/* /usr/src/*
