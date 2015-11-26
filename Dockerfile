@@ -5,7 +5,7 @@ MAINTAINER Markus Fix <lispmeister@gmail.com>
 
 # Install wget
 RUN apt-get update && apt-get install -y \
-    wget
+    wget \
     --no-install-recommends && \
     rm -rf /var/lib/apt/lists/*
     
@@ -16,7 +16,7 @@ RUN apt-key add erlang_solutions.asc
 
 # Install dependencies
 RUN apt-get update && apt-get install -y \
-    erlang-mini
+    erlang-mini \
     --no-install-recommends && \
     rm -rf /var/lib/apt/lists/*
 
