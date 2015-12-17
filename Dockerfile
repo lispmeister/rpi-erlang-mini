@@ -12,3 +12,5 @@ WORKDIR /data
 
 # Define default command
 CMD ["bash"]
+
+EXPOSE 9100 9105
